@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: grey;
+    color: black;
+}
+
+/* whole page content */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* hero section */
+.hero {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 2rem;
+    box-sizing: border-box;
+
+}
+
+/* ace academy title */
+.hero h1 {
+    font-family: "Faster One", system-ui;
+    font-size: 5rem;
+    color: rgb(108, 0, 0);
+    margin-bottom: 1rem;
+}
+
+/* motto */
+.hero h3 {
+    font-family: "Agdasima", sans-serif;
+    font-style: oblique;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+/* description */
+.hero p {
+    color: rgb(0, 0, 0);
+    font-family: "Agdasima", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* button */
+.cta {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-color: rgba(0, 0, 0, 0.312);
+    border: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    font-family: "Agdasima", sans-serif;
+    font-size: 1.8rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    transition: 1s, color 2s;
+}
+
+/* button hover */
+.cta:hover {
+    background: rgb(108, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: all 1s;
+}
+
+
+/* content */
+.content h2 {
+    font-family: "Agdasima", sans-serif;
+    font-style: oblique;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.content {
+    font-family: "Agdasima", sans-serif;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
