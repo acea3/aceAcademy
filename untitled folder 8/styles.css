@@ -1,33 +1,59 @@
 body {
-    margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: grey;
-    color: black;
+    background: black;
+    color: white;
+    margin: 0;
 }
 
 /* whole page content */
 .container {
+}
+
+/* navbar */
+.navbar {
+    background: white;
+    color: black;
+    height: 9rem;
+    width: 150%;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+/* navbar title */
+.navbar-title {
+    font-family: "Faster One", system-ui;
+    font-size: 5rem;
+    line-height: 3.3rem;
+    letter-spacing: -1.5rem;
+}
+
+.navigation {
+    position: relative;
+    left: 25%;
+    padding: 0;
+}
+
+.navbar a {
     display: flex;
-    min-height: 100vh;
+    align-items: center;
+    display: inline-block;
+    margin-left: 4rem;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #868686;
+    transition: 0.5s color 1s;
 }
 
 /* hero section */
 .hero {
-    flex: 1 1 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 2rem 2rem;
-    box-sizing: border-box;
-
-}
-
-/* ace academy title */
-.hero h1 {
-    font-family: "Faster One", system-ui;
-    font-size: 5rem;
-    color: rgb(108, 0, 0);
-    margin-bottom: 1rem;
+    background: transparent;
+    color: white;
 }
 
 /* motto */
@@ -35,12 +61,11 @@ body {
     font-family: "Agdasima", sans-serif;
     font-style: oblique;
     font-size: 2rem;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 /* description */
 .hero p {
-    color: rgb(0, 0, 0);
     font-family: "Agdasima", sans-serif;
     font-size: 1.5rem;
     margin-bottom: 2rem;
@@ -52,8 +77,8 @@ body {
     color: rgb(0, 0, 0);
     border-color: rgba(0, 0, 0, 0.312);
     border: solid;
-    border-width: 2px;
-    border-radius: 10px;
+    border-width: 0.2rem;
+    border-radius: 1rem;
     font-family: "Agdasima", sans-serif;
     font-size: 1.8rem;
     padding: .5rem 1.2rem;
@@ -63,7 +88,7 @@ body {
 
 /* button hover */
 .cta:hover {
-    background: rgb(108, 0, 0);
+    background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     transition: all 1s;
 }
@@ -74,11 +99,12 @@ body {
     font-family: "Agdasima", sans-serif;
     font-style: oblique;
     font-size: 2rem;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .content {
     font-family: "Agdasima", sans-serif;
     font-size: 2rem;
-    color: rgb(0, 0, 0);
+    background: transparent;
+    color: rgb(255, 255, 255);
 }
