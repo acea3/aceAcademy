@@ -1,41 +1,480 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ace Academy</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="navbar-title">ACE<br>ACADEMY</div>
-      <div class="navigation">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#programs">Programs</a>
-      <a href="#contact">Contact Us</a>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACE ACADEMY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the Faster One font */
+        .font-faster-one {
+            font-family: 'Faster One', cursive;
+        }
+        /* Custom styles for the Inter font */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Utility class to hide elements */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 min-h-screen flex flex-col">
+
+    <nav class="bg-white p-4 shadow-lg rounded-b-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-3xl font-bold text-gray-900 mb-4 md:mb-0 rounded-md p-2">
+                <span class="font-faster-one">ACE ACADEMY</span>
+            </div>
+
+            <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 text-lg">
+                <li><a href="#" id="homeNavLink" class="text-gray-700 hover:text-purple-600 transition duration-300 ease-in-out px-3 py-2 rounded-md">Home</a></li>
+                <li><a href="#" id="aboutNavLink" class="text-gray-700 hover:text-purple-600 transition duration-300 ease-in-out px-3 py-2 rounded-md">About</a></li>
+                <li><a href="#" id="programsNavLink" class="text-gray-700 hover:text-purple-600 transition duration-300 ease-in-out px-3 py-2 rounded-md">Programs</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-purple-600 transition duration-300 ease-in-out px-3 py-2 rounded-md">Contact Us</a></li>
+            </ul>
+        </div>
     </nav>
-    <div class="container">
-      <section class="hero">
-        <h3>Unlock Your Basketball Potential</h3>
-        <p>🏀 High-level training for dedicated hoopers.
-        <br>📕 Personalized programs to elevate your game. 
-        <br>📈 Real results you can see on the court.</p>
-        <button class="cta">Register Now</button>
-      </section>
-      <main class="content">
-        <h2>Training by Position</h2>
-        <ul>
-          <li>Guard: Ball handling, shooting, court vision</li>
-          <li>Wing: Versatility, defense, perimeter skills</li>
-          <li>Big: Post moves, rebounding, rim protection</li>
-        </ul>
-      </main>
-    </div>
-  </body>
+
+    <main class="flex-grow max-w-screen-xl mx-auto p-6 md:p-10 flex flex-col items-center justify-center text-center">
+
+        <section id="homePage" class="w-full">
+            <div class="bg-white text-gray-900 p-8 md:p-12 rounded-xl shadow-2xl max-w-4xl w-full mb-12">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">Unlock Your Basketball Potential</h1>
+                <ul class="text-xl md:text-2xl list-none space-y-4 mb-8">
+                    <li class="flex items-center justify-center">
+                        <span class="text-purple-600 mr-3 text-3xl">🏀</span> High-level training for dedicated hoopers.
+                    </li>
+                    <li class="flex items-center justify-center">
+                        <span class="text-purple-600 mr-3 text-3xl">📕</span> Personalized programs to elevate your game.
+                    </li>
+                    <li class="flex items-center justify-center">
+                        <span class="text-purple-600 mr-3 text-3xl">📈</span> Real results you can see on the court.
+                    </li>
+                </ul>
+                <button id="registerNowButton" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full text-xl md:text-2xl transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">
+                    Register Now
+                </button>
+            </div>
+
+            <div class="bg-gray-200 text-gray-800 p-8 md:p-12 rounded-xl shadow-2xl max-w-4xl w-full">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Training by Position</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-xl border border-gray-300">
+                        <h3 class="text-2xl font-semibold mb-3 text-purple-600">Guard</h3>
+                        <ul class="list-disc list-inside text-lg space-y-2 text-gray-700">
+                            <li>Ball handling</li>
+                            <li>Shooting</li>
+                            <li>Court vision</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-xl border border-gray-300">
+                        <h3 class="text-2xl font-semibold mb-3 text-purple-600">Wing</h3>
+                        <ul class="list-disc list-inside text-lg space-y-2 text-gray-700">
+                            <li>Versatility</li>
+                            <li>Defense</li>
+                            <li>Perimeter skills</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-xl border border-gray-300">
+                        <h3 class="text-2xl font-semibold mb-3 text-purple-600">Big</h3>
+                        <ul class="list-disc list-inside text-lg space-y-2 text-gray-700">
+                            <li>Post moves</li>
+                            <li>Rebounding</li>
+                            <li>Rim protection</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutPage" class="w-full hidden">
+            <div class="bg-white text-gray-900 p-8 md:p-12 rounded-xl shadow-2xl max-w-4xl w-full text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight text-purple-600">About ACE ACADEMY</h2>
+                <p class="text-xl md:text-2xl mb-4 leading-relaxed">
+                    Ace Academy is for all levels, all ages of current or aspiring basketball players from Vancouver, BC.
+                </p>
+                <p class="text-xl md:text-2xl mb-4 leading-relaxed">
+                    Our coaches and trainers, with high-level experience in the sport and fitness, will provide you detailed insights, specifically for you.
+                </p>
+                <p class="text-xl md:text-2xl mb-8 leading-relaxed font-semibold">
+                    There's no way to cheat around improving, so get started now to elevate your game!
+                </p>
+                <button id="aboutRegisterButton" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full text-xl md:text-2xl transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">
+                    Register Now
+                </button>
+            </div>
+        </section>
+
+        <section id="programsPage" class="w-full hidden">
+            <div class="bg-white text-gray-900 p-8 md:p-12 rounded-xl shadow-2xl max-w-4xl w-full text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-8 leading-tight text-purple-600">Our Programs</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-purple-50 p-6 rounded-lg shadow-xl border border-purple-300">
+                        <h3 class="text-2xl font-semibold text-purple-700">Bronze Package</h3>
+                        <div class="text-3xl mb-3 flex justify-center">🥉</div>
+                        <ul class="list-none text-lg space-y-2 text-gray-800 mb-4">
+                            <li>1 Day/Week</li>
+                            <li>2 Hours/Session</li>
+                            <li>1 Month Duration</li>
+                        </ul>
+                        <p class="text-4xl font-bold text-purple-600 mb-4">$300</p>
+                        <button class="program-register-button bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-lg" data-package="bronze">
+                            Select Program
+                        </button>
+                    </div>
+
+                    <div class="bg-purple-100 p-6 rounded-lg shadow-xl border border-purple-400">
+                        <h3 class="text-2xl font-semibold text-purple-800">Silver Package</h3>
+                        <div class="text-3xl mb-3 flex justify-center">🥈</div>
+                        <ul class="list-none text-lg space-y-2 text-gray-800 mb-4">
+                            <li>2 Days/Week</li>
+                            <li>2 Hours/Session</li>
+                            <li>1 Month Duration</li>
+                        </ul>
+                        <p class="text-4xl font-bold text-purple-700 mb-4">$500</p>
+                        <button class="program-register-button bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-lg" data-package="silver">
+                            Select Program
+                        </button>
+                    </div>
+
+                    <div class="bg-purple-200 p-6 rounded-lg shadow-xl border border-purple-500">
+                        <h3 class="text-2xl font-semibold text-purple-900">Gold Package</h3>
+                        <div class="text-3xl mb-3 flex justify-center">🥇</div>
+                        <ul class="list-none text-lg space-y-2 text-gray-800 mb-4">
+                            <li>3 Days/Week</li>
+                            <li>2 Hours/Session</li>
+                            <li>1 Month Duration</li>
+                        </ul>
+                        <p class="text-4xl font-bold text-purple-800 mb-4">$800</p>
+                        <button class="program-register-button bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-lg" data-package="gold">
+                            Select Program
+                        </button>
+                    </div>
+                </div>
+                <button id="programsBackToHome" class="mt-8 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
+                    Back to Home
+                </button>
+            </div>
+        </section>
+
+
+        <section id="registerPage" class="w-full hidden">
+            <div class="bg-white p-8 md:p-12 rounded-xl shadow-2xl max-w-2xl w-full">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-purple-600">Register Now!</h2>
+
+                <div id="registrationFormContainer">
+                    <form id="registrationForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-lg font-medium text-gray-700 mb-2 text-left">Full Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500 sm:text-lg"
+                                placeholder="John Doe"
+                            />
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-lg font-medium text-gray-700 mb-2 text-left">Email Address</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500 sm:text-lg"
+                                placeholder="john.doe@example.com"
+                            />
+                        </div>
+
+                        <div>
+                            <label for="phone" class="block text-lg font-medium text-gray-700 mb-2 text-left">Phone Number</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500 sm:text-lg"
+                                placeholder="(123) 456-7890"
+                            />
+                        </div>
+
+                        <div>
+                            <label for="packageType" class="block text-lg font-medium text-gray-700 mb-2 text-left">Select Package <span class="text-red-500">*</span></label>
+                            <select
+                                id="packageType"
+                                name="packageType"
+                                required
+                                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500 sm:text-lg bg-white"
+                            >
+                                <option value="">Select a package</option>
+                                <option value="bronze">Bronze Package ($300)</option>
+                                <option value="silver">Silver Package ($500)</option>
+                                <option value="gold">Gold Package ($800)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="program" class="block text-lg font-medium text-gray-700 mb-2 text-left">Program of Interest <span class="text-red-500">*</span></label>
+                            <select
+                                id="program"
+                                name="program"
+                                required
+                                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500 sm:text-lg bg-white"
+                            >
+                                <option value="">Select a program</option>
+                                <option value="guard">Guard Training</option>
+                                <option value="wing">Wing Training</option>
+                                <option value="big">Big Training</option>
+                                <option value="general">General Training</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-lg font-medium text-gray-700 mb-2 text-left">Additional Comments (Optional)</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="4"
+                                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500 sm:text-lg"
+                                placeholder="Tell us about your goals or any specific needs, e.g., 'I want to improve my shooting form and quickness.'"
+                            ></textarea>
+                        </div>
+
+                        <div class="flex flex-col items-start space-y-4">
+                            <button
+                                type="button"
+                                id="getRecommendationButton"
+                                class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-lg flex items-center justify-center"
+                            >
+                                <span id="recommendationButtonText">✨ Get Program Recommendation</span>
+                                <svg id="recommendationSpinner" class="animate-spin -ml-1 mr-3 h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                            </button>
+                            <div id="recommendationOutput" class="bg-purple-50 text-purple-800 p-4 rounded-lg shadow-md w-full text-left hidden">
+                                <p class="font-semibold mb-2">AI Recommendation:</p>
+                                <p id="recommendationText"></p>
+                            </div>
+                            <div id="recommendationError" class="bg-red-100 text-red-700 p-4 rounded-lg shadow-md w-full text-left hidden">
+                                <p class="font-semibold mb-2">Error:</p>
+                                <p id="recommendationErrorText"></p>
+                            </div>
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full text-xl md:text-2xl transition duration-300 ease-in-out transform hover:scale-105 shadow-lg"
+                        >
+                            Submit Registration
+                        </button>
+                    </form>
+                </div>
+                <div id="registrationConfirmation" class="text-center hidden">
+                    <p class="text-xl text-green-600 mb-4">Thank you for registering!</p>
+                    <p class="text-lg text-gray-700">We've received your information and will be in touch shortly.</p>
+                    <button id="backToHomeFromConfirmation" class="mt-6 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">
+                        Back to Home
+                    </button>
+                </div>
+            </div>
+            <button id="backToHomeFromRegister" class="mt-6 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
+                Back to Home
+            </button>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-300 text-gray-700 text-center p-4 mt-8 rounded-t-lg">
+        <p>&copy; 2025 ACE ACADEMY. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Get references to the main page sections
+        const homePage = document.getElementById('homePage');
+        const aboutPage = document.getElementById('aboutPage');
+        const programsPage = document.getElementById('programsPage');
+        const registerPage = document.getElementById('registerPage');
+
+        // Get references to buttons and navigation links
+        const registerNowButton = document.getElementById('registerNowButton');
+        const homeNavLink = document.getElementById('homeNavLink');
+        const aboutNavLink = document.getElementById('aboutNavLink');
+        const programsNavLink = document.getElementById('programsNavLink');
+        const aboutRegisterButton = document.getElementById('aboutRegisterButton');
+        const programsBackToHome = document.getElementById('programsBackToHome');
+        const backToHomeFromRegister = document.getElementById('backToHomeFromRegister');
+        const backToHomeFromConfirmation = document.getElementById('backToHomeFromConfirmation');
+
+        // Get references to form elements and recommendation elements
+        const registrationForm = document.getElementById('registrationForm');
+        const registrationFormContainer = document.getElementById('registrationFormContainer');
+        const registrationConfirmation = document.getElementById('registrationConfirmation');
+        const messageInput = document.getElementById('message');
+        const getRecommendationButton = document.getElementById('getRecommendationButton');
+        const recommendationButtonText = document.getElementById('recommendationButtonText');
+        const recommendationSpinner = document.getElementById('recommendationSpinner');
+        const recommendationOutput = document.getElementById('recommendationOutput');
+        const recommendationText = document.getElementById('recommendationText');
+        const recommendationErrorDiv = document.getElementById('recommendationError');
+        const recommendationErrorText = document.getElementById('recommendationErrorText');
+        const programSelect = document.getElementById('program');
+        const packageTypeSelect = document.getElementById('packageType');
+
+
+        // Function to show a specific page and hide others
+        function showPage(pageId) {
+            homePage.classList.add('hidden');
+            aboutPage.classList.add('hidden');
+            programsPage.classList.add('hidden');
+            registerPage.classList.add('hidden');
+
+            if (pageId === 'home') {
+                homePage.classList.remove('hidden');
+            } else if (pageId === 'about') {
+                aboutPage.classList.remove('hidden');
+            } else if (pageId === 'programs') {
+                programsPage.classList.remove('hidden');
+            }
+            else if (pageId === 'register') {
+                registerPage.classList.remove('hidden');
+                // Reset form state when navigating to register page, unless pre-filled by program selection
+                registrationForm.reset();
+                registrationFormContainer.classList.remove('hidden');
+                registrationConfirmation.classList.add('hidden');
+                recommendationOutput.classList.add('hidden');
+                recommendationErrorDiv.classList.add('hidden');
+                recommendationText.textContent = '';
+                recommendationErrorText.textContent = '';
+                // The packageTypeSelect value is handled directly by the program-register-button listener
+                // so we don't reset it here to allow it to carry over.
+                // However, for navigation *not* from a "Select Program" button (e.g., "Register Now" from home/about),
+                // we should ensure it's cleared. This is handled in the specific click listeners for those buttons.
+            }
+        }
+
+        // Initial page load: show home page
+        showPage('home');
+
+        // Event Listeners for page navigation
+        registerNowButton.addEventListener('click', () => {
+            packageTypeSelect.value = ''; // Reset package selection when coming from homepage
+            showPage('register');
+        });
+        homeNavLink.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent default link behavior
+            showPage('home');
+        });
+        aboutNavLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            showPage('about');
+        });
+        programsNavLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            showPage('programs');
+        });
+        aboutRegisterButton.addEventListener('click', () => {
+            packageTypeSelect.value = ''; // Reset package selection when coming from about page
+            showPage('register');
+        });
+        programsBackToHome.addEventListener('click', () => showPage('home'));
+
+        // Handle "Select Program" buttons on the Programs page
+        document.querySelectorAll('.program-register-button').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const selectedPackage = e.target.dataset.package; // Get the data-package attribute
+                if (packageTypeSelect) {
+                    packageTypeSelect.value = selectedPackage; // Set the value of the packageType select
+                }
+                showPage('register');
+            });
+        });
+
+        // Handle Registration Form Submission
+        registrationForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent default form submission
+
+            // Get form data (for demonstration, log to console)
+            const formData = new FormData(registrationForm);
+            const data = {};
+            for (let [key, value] of formData.entries()) {
+                data[key] = value;
+            }
+            console.log('Registration Data:', data);
+
+            // Show confirmation message and hide the form
+            registrationFormContainer.classList.add('hidden');
+            registrationConfirmation.classList.remove('hidden');
+        });
+
+        // Function to get program recommendation using Gemini API
+        getRecommendationButton.addEventListener('click', async () => {
+            // Clear previous recommendation and error
+            recommendationOutput.classList.add('hidden');
+            recommendationErrorDiv.classList.add('hidden');
+            recommendationText.textContent = '';
+            recommendationErrorText.textContent = '';
+
+            // Show loading spinner
+            recommendationSpinner.classList.remove('hidden');
+            recommendationButtonText.classList.add('hidden');
+            getRecommendationButton.disabled = true;
+
+            const comments = messageInput.value || 'No specific comments provided.';
+            const prompt = `Given the following additional comments from a basketball academy registrant, suggest which of the following programs would be most suitable: Guard Training, Wing Training, Big Training, or General Training. Explain your reasoning briefly. If the comments are not specific enough, suggest General Training.
+
+            Registrant's comments: "${comments}"
+
+            Please provide your recommendation in a concise paragraph.`;
+
+            let chatHistory = [];
+            chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+
+            const payload = { contents: chatHistory };
+            const apiKey = ""; // Canvas will automatically provide the API key at runtime
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(`API error: ${response.status} - ${errorData.error?.message || 'Unknown error'}`);
+                }
+
+                const result = await response.json();
+
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    recommendationText.textContent = text;
+                    recommendationOutput.classList.remove('hidden');
+                } else {
+                    recommendationErrorText.textContent = 'Could not get a recommendation. Please try again.';
+                    recommendationErrorDiv.classList.remove('hidden');
+                    console.error('Unexpected API response structure:', result);
+                }
+            } catch (error) {
+                console.error('Error fetching program recommendation:', error);
+                recommendationErrorText.textContent = `Failed to get recommendation: ${error.message}`;
+                recommendationErrorDiv.classList.remove('hidden');
+            } finally {
+                // Hide loading spinner and re-enable button
+                recommendationSpinner.classList.add('hidden');
+                recommendationButtonText.classList.remove('hidden');
+                getRecommendationButton.disabled = false;
+            }
+        });
+
+    </script>
+</body>
 </html>
