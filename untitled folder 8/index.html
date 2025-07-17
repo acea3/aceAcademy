@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACE ACADEMY</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/83a2467d77.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         /* Custom styles for the Faster One font */
         .font-faster-one {
@@ -29,12 +31,25 @@
                 <span class="font-faster-one">ACE ACADEMY</span>
             </div>
 
-            <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 text-lg">
-                <li><a href="#" id="homeNavLink" class="text-gray-700 hover:text-purple-600 transition duration-300 ease-in-out px-3 py-2 rounded-md">Home</a></li>
-                <li><a href="#" id="aboutNavLink" class="text-gray-700 hover:text-purple-600 transition duration-300 ease-in-out px-3 py-2 rounded-md">About</a></li>
-                <li><a href="#" id="programsNavLink" class="text-gray-700 hover:text-purple-600 transition duration-300 ease-in-out px-3 py-2 rounded-md">Programs</a></li>
-                <li><a href="#" class="text-gray-700 hover:text-purple-600 transition duration-300 ease-in-out px-3 py-2 rounded-md">Contact Us</a></li>
-            </ul>
+            <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-8">
+                <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 text-lg">
+                    <li><a href="#" id="homeNavLink" class="text-gray-700 hover:text-purple-600 transition duration-300 ease-in-out px-3 py-2 rounded-md">Home</a></li>
+                    <li><a href="#" id="aboutNavLink" class="text-gray-700 hover:text-purple-600 transition duration-300 ease-in-out px-3 py-2 rounded-md">About</a></li>
+                    <li><a href="#" id="programsNavLink" class="text-gray-700 hover:text-purple-600 transition duration-300 ease-in-out px-3 py-2 rounded-md">Programs</a></li>
+                    <li><a href="#" id="contactUsNavLink" class="text-gray-700 hover:text-purple-600 transition duration-300 ease-in-out px-3 py-2 rounded-md">Contact Us</a></li>
+                </ul>
+
+                <div class="flex space-x-2 mt-4 md:mt-0"> <a href="mailto:info@aceacademy.com" class="p-2 text-sm bg-gray-200 hover:bg-purple-100 text-gray-700 hover:text-purple-700 rounded-full transition duration-300 ease-in-out flex items-center justify-center" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="p-2 text-sm bg-gray-200 hover:bg-purple-100 text-gray-700 hover:text-purple-700 rounded-full transition duration-300 ease-in-out flex items-center justify-center" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="p-2 text-sm bg-gray-200 hover:bg-purple-100 text-gray-700 hover:text-purple-700 rounded-full transition duration-300 ease-in-out flex items-center justify-center" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="p-2 text-sm bg-gray-200 hover:bg-purple-100 text-gray-700 hover:text-purple-700 rounded-full transition duration-300 ease-in-out flex items-center justify-center" aria-label="X (Twitter)"><i class="fa-brands fa-twitter"></i></a>
+
+                    <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="p-2 text-sm bg-gray-200 hover:bg-purple-100 text-gray-700 hover:text-purple-700 rounded-full transition duration-300 ease-in-out flex items-center justify-center" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -42,16 +57,16 @@
 
         <section id="homePage" class="w-full">
             <div class="bg-white text-gray-900 p-8 md:p-12 rounded-xl shadow-2xl max-w-4xl w-full mb-12">
-                <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">Unlock Your Basketball Potential</h1>
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">Unlock Your Potential</h1>
                 <ul class="text-xl md:text-2xl list-none space-y-4 mb-8">
                     <li class="flex items-center justify-center">
-                        <span class="text-purple-600 mr-3 text-3xl">🏀</span> High-level training for dedicated hoopers.
+                        <span class="text-purple-600 mr-3 text-3xl"></span> 🏀 High-level training for dedicated hoopers.
                     </li>
                     <li class="flex items-center justify-center">
-                        <span class="text-purple-600 mr-3 text-3xl">📕</span> Personalized programs to elevate your game.
+                        <span class="text-purple-600 mr-3 text-3xl"></span> 📕 Personalized programs to elevate your game.
                     </li>
                     <li class="flex items-center justify-center">
-                        <span class="text-purple-600 mr-3 text-3xl">📈</span> Real results you can see on the court.
+                        <span class="text-purple-600 mr-3 text-3xl"></span> 📈 Real results you can see on the court.
                     </li>
                 </ul>
                 <button id="registerNowButton" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full text-xl md:text-2xl transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">
@@ -60,7 +75,7 @@
             </div>
 
             <div class="bg-gray-200 text-gray-800 p-8 md:p-12 rounded-xl shadow-2xl max-w-4xl w-full">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8">Position-specified Training</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Training by Position</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="bg-white p-6 rounded-lg shadow-xl border border-gray-300">
                         <h3 class="text-2xl font-semibold mb-3 text-purple-600">Guard</h3>
@@ -113,8 +128,8 @@
                 <h2 class="text-4xl md:text-5xl font-extrabold mb-8 leading-tight text-purple-600">Our Programs</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="bg-purple-50 p-6 rounded-lg shadow-xl border border-purple-300">
-                        <h3 class="text-2xl font-semibold text-purple-700">Bronze Package</h3>
-                        <div class="text-3xl mb-3 flex justify-center">🥉</div>
+                        <h3 class="text-2xl font-semibold text-purple-700">Bronze Package 🥉</h3>
+                        <div class="text-3xl mb-3 flex justify-center"></div>
                         <ul class="list-none text-lg space-y-2 text-gray-800 mb-4">
                             <li>1 Day/Week</li>
                             <li>2 Hours/Session</li>
@@ -127,8 +142,8 @@
                     </div>
 
                     <div class="bg-purple-100 p-6 rounded-lg shadow-xl border border-purple-400">
-                        <h3 class="text-2xl font-semibold text-purple-800">Silver Package</h3>
-                        <div class="text-3xl mb-3 flex justify-center">🥈</div>
+                        <h3 class="text-2xl font-semibold text-purple-800">Silver Package 🥈</h3>
+                        <div class="text-3xl mb-3 flex justify-center"></div>
                         <ul class="list-none text-lg space-y-2 text-gray-800 mb-4">
                             <li>2 Days/Week</li>
                             <li>2 Hours/Session</li>
@@ -141,8 +156,8 @@
                     </div>
 
                     <div class="bg-purple-200 p-6 rounded-lg shadow-xl border border-purple-500">
-                        <h3 class="text-2xl font-semibold text-purple-900">Gold Package</h3>
-                        <div class="text-3xl mb-3 flex justify-center">🥇</div>
+                        <h3 class="text-2xl font-semibold text-purple-900">Gold Package <br>🥇</h3>
+                        <div class="text-3xl mb-3 flex justify-center"></div>
                         <ul class="list-none text-lg space-y-2 text-gray-800 mb-4">
                             <li>3 Days/Week</li>
                             <li>2 Hours/Session</li>
@@ -155,6 +170,46 @@
                     </div>
                 </div>
                 <button id="programsBackToHome" class="mt-8 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
+                    Back to Home
+                </button>
+            </div>
+        </section>
+
+        <section id="contactUsPage" class="w-full hidden">
+            <div class="bg-white text-gray-900 p-8 md:p-12 rounded-xl shadow-2xl max-w-4xl w-full text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight text-purple-600">Contact Us</h2>
+                <p class="text-xl md:text-2xl mb-8 leading-relaxed">
+                    We'd love to hear from you! Reach out to ACE ACADEMY through any of the methods below.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                    <div class="bg-purple-50 p-6 rounded-lg shadow-xl border border-purple-300 flex flex-col items-center justify-center">
+                        <i class="fa-solid fa-envelope text-5xl text-purple-600 mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-purple-700 mb-2">Email Us</h3>
+                        <p class="text-lg text-gray-800">For general inquiries, reach us at:</p>
+                        <a href="mailto:info@aceacademy.com" class="text-lg text-purple-600 hover:underline font-semibold">info@aceacademy.com</a>
+                    </div>
+
+                    <div class="bg-purple-50 p-6 rounded-lg shadow-xl border border-purple-300 flex flex-col items-center justify-center">
+                        <i class="fa-solid fa-phone-alt text-5xl text-purple-600 mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-purple-700 mb-2">Call Us</h3>
+                        <p class="text-lg text-gray-800">Speak to our team directly:</p>
+                        <a href="tel:+11234567890" class="text-lg text-purple-600 hover:underline font-semibold">+1 (123) 456-7890</a>
+                    </div>
+
+                    <div class="bg-purple-50 p-6 rounded-lg shadow-xl border border-purple-300 flex flex-col items-center justify-center">
+                        <i class="fa-solid fa-share-alt text-5xl text-purple-600 mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-purple-700 mb-2">Connect on Social</h3>
+                        <p class="text-lg text-gray-800 mb-4">Follow us and send us a message:</p>
+                        <div class="flex space-x-4">
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="p-3 text-xl bg-gray-200 hover:bg-purple-100 text-gray-700 hover:text-purple-700 rounded-full transition duration-300 ease-in-out flex items-center justify-center" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="p-3 text-xl bg-gray-200 hover:bg-purple-100 text-gray-700 hover:text-purple-700 rounded-full transition duration-300 ease-in-out flex items-center justify-center" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="p-3 text-xl bg-gray-200 hover:bg-purple-100 text-gray-700 hover:text-purple-700 rounded-full transition duration-300 ease-in-out flex items-center justify-center" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="p-3 text-xl bg-gray-200 hover:bg-purple-100 text-gray-700 hover:text-purple-700 rounded-full transition duration-300 ease-in-out flex items-center justify-center" aria-label="X (Twitter)"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <button id="contactUsBackToHome" class="mt-8 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
                     Back to Home
                 </button>
             </div>
@@ -250,7 +305,7 @@
                                 id="getRecommendationButton"
                                 class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-lg flex items-center justify-center"
                             >
-                                <span id="recommendationButtonText">✨ Get Program Recommendation</span>
+                                <span id="recommendationButtonText">Get Program Recommendation</span>
                                 <svg id="recommendationSpinner" class="animate-spin -ml-1 mr-3 h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                                     <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
@@ -299,16 +354,20 @@
         const aboutPage = document.getElementById('aboutPage');
         const programsPage = document.getElementById('programsPage');
         const registerPage = document.getElementById('registerPage');
+        const contactUsPage = document.getElementById('contactUsPage');
 
         // Get references to buttons and navigation links
         const registerNowButton = document.getElementById('registerNowButton');
         const homeNavLink = document.getElementById('homeNavLink');
         const aboutNavLink = document.getElementById('aboutNavLink');
         const programsNavLink = document.getElementById('programsNavLink');
+        const contactUsNavLink = document.getElementById('contactUsNavLink');
         const aboutRegisterButton = document.getElementById('aboutRegisterButton');
         const programsBackToHome = document.getElementById('programsBackToHome');
         const backToHomeFromRegister = document.getElementById('backToHomeFromRegister');
         const backToHomeFromConfirmation = document.getElementById('backToHomeFromConfirmation');
+        const contactUsBackToHome = document.getElementById('contactUsBackToHome');
+
 
         // Get references to form elements and recommendation elements
         const registrationForm = document.getElementById('registrationForm');
@@ -332,6 +391,7 @@
             aboutPage.classList.add('hidden');
             programsPage.classList.add('hidden');
             registerPage.classList.add('hidden');
+            contactUsPage.classList.add('hidden');
 
             if (pageId === 'home') {
                 homePage.classList.remove('hidden');
@@ -354,6 +414,8 @@
                 // so we don't reset it here to allow it to carry over.
                 // However, for navigation *not* from a "Select Program" button (e.g., "Register Now" from home/about),
                 // we should ensure it's cleared. This is handled in the specific click listeners for those buttons.
+            } else if (pageId === 'contactUs') {
+                contactUsPage.classList.remove('hidden');
             }
         }
 
@@ -377,11 +439,17 @@
             e.preventDefault();
             showPage('programs');
         });
+        contactUsNavLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            showPage('contactUs');
+        });
         aboutRegisterButton.addEventListener('click', () => {
             packageTypeSelect.value = ''; // Reset package selection when coming from about page
             showPage('register');
         });
         programsBackToHome.addEventListener('click', () => showPage('home'));
+        contactUsBackToHome.addEventListener('click', () => showPage('home'));
+
 
         // Handle "Select Program" buttons on the Programs page
         document.querySelectorAll('.program-register-button').forEach(button => {
